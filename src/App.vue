@@ -2,39 +2,55 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      color="#232021"
       dark
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+      <v-layout row wrap align-center>
+        <v-flex shrink>
+          <v-img
+            alt="rapsodo-logo"
+            class="shrink mr-2"
+            contain
+            src="./assets/logos/rapsodo-logo.png"
+            transition="scale-transition"
+            width="40"
+          />
+        </v-flex>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
+        <v-flex shrink>
+          <h1 class="ml-2">Rapsodo Store</h1>
+        </v-flex>
 
-      <v-spacer></v-spacer>
+        <v-spacer/>
 
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
+        <v-flex shrink>
+          <router-link to="/" class="no-text-decoration">
+            <v-btn
+              class="mx-2"
+              fab
+              text
+              icon
+            >
+              <v-icon>
+                mdi-store
+              </v-icon>
+            </v-btn>
+          </router-link>
+
+          <router-link to="/basket" class="no-text-decoration">
+            <v-btn
+              class="mx-2"
+              fab
+              text
+              icon
+            >
+              <v-icon>
+                mdi-cart
+              </v-icon>
+            </v-btn>
+          </router-link>
+        </v-flex>
+      </v-layout>
     </v-app-bar>
 
     <v-main>
@@ -49,7 +65,6 @@ export default {
   name: 'App',
 
   data: () => ({
-    //
   }),
 };
 </script>
