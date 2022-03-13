@@ -16,7 +16,7 @@
           />
         </v-flex>
 
-        <v-flex shrink>
+        <v-flex shrink class="hidden-xs-only">
           <h2 class="ml-2">Rapsodo Store</h2>
         </v-flex>
 
