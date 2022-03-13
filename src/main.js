@@ -1,3 +1,5 @@
+import 'normalize.css';
+import './assets/styles/override.scss';
 import Vue from 'vue';
 import Notifications from 'vue-notification';
 import App from './App.vue';
