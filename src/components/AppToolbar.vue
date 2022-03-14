@@ -44,7 +44,7 @@
               icon
             >
               <v-icon>
-                {{ basketItems.length ? 'mdi-cart' : 'mdi-cart-outline' }}
+                {{ basketIcon }}
               </v-icon>
             </v-btn>
           </router-link>
@@ -60,6 +60,9 @@ export default {
   name: 'AppToolbar',
   computed: {
     ...mapState(['basketItems']),
+    basketIcon() {
+      return this.basketItems.length ? 'mdi-cart' : 'mdi-cart-outline';
+    },
   },
 };
 </script>

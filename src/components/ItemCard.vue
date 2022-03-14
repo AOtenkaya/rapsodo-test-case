@@ -44,6 +44,7 @@
                 outlined flat dense
                 hide-details
                 hide-spin-buttons
+                @input="setQuantity"
               />
             </v-flex>
 

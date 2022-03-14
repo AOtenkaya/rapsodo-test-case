@@ -26,13 +26,13 @@ export default {
   computed: {
     ...mapState(['basketItems']),
     basketSubTotal() {
-      const asd = this.basketItems.reduce((sum, basketItem) => {
+      const result = this.basketItems.reduce((sum, basketItem) => {
         const subTotal = sum + basketItem.amount * basketItem.quantity;
 
         return subTotal;
       }, 0);
 
-      return asd;
+      return result;
     },
   },
 };

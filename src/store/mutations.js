@@ -28,4 +28,12 @@ export default {
 
     localStorage.setItem('basketItems', JSON.stringify(state.basketItems));
   },
+  setItemQuantity(state, params) {
+    const foundItem = state.basketItems
+      .find((basketItem) => basketItem.name === params.item.name);
+
+    foundItem.quantity = params.newQuantity;
+
+    localStorage.setItem('basketItems', JSON.stringify(state.basketItems));
+  },
 };

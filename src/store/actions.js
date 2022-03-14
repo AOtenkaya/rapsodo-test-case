@@ -16,4 +16,7 @@ export default {
   removeItemFromBasket({ commit }, item) {
     commit('removeItemFromBasket', item);
   },
+  setItemQuantity({ commit }, params) {
+    commit('setItemQuantity', params);
+  },
 };
