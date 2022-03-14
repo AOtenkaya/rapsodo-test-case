@@ -5,7 +5,7 @@
         <v-flex xs4>
           <v-img
             alt="item-photo"
-            src="https://rapsodocertified.b-cdn.net/wp-content/uploads/2020/01/ipad-and-hitting-monitor-1024x768.png"
+            src="../assets/item-image.png"
             max-width="240"
             max-height="240"
             class="centerized"
