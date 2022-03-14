@@ -4,8 +4,7 @@ export default {
       options: {
         duration: 3000,
         speed: 500,
-        ignoreDuplicates: false,
-        closeOnClick: true,
+        ignoreDuplicates: true,
       },
     };
   },
