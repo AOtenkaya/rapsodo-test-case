@@ -81,8 +81,6 @@ export default {
       default: false,
     },
   },
-  components: {
-  },
 };
 </script>
 

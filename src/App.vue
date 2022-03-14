@@ -18,7 +18,5 @@ export default {
   components: {
     AppToolbar,
   },
-  data: () => ({
-  }),
 };
 </script>
