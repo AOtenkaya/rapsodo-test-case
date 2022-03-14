@@ -44,7 +44,7 @@
               icon
             >
               <v-icon>
-                mdi-cart
+                {{ basketItems.length ? 'mdi-cart' : 'mdi-cart-outline' }}
               </v-icon>
             </v-btn>
           </router-link>
@@ -54,11 +54,12 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
+
 export default {
   name: 'AppToolbar',
+  computed: {
+    ...mapState(['basketItems']),
+  },
 };
 </script>
-
-<style>
-
-</style>
