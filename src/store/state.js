@@ -1,3 +1,3 @@
 export default () => ({
-  basket: [],
+  basketItems: JSON.parse(localStorage.getItem('basketItems')) || [],
 });
