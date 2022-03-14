@@ -1,7 +1,11 @@
 .no-text-transform {
-  text-transform: none;
+  text-transform: none !important;
 }
 
 .no-text-decoration {
   text-decoration: none;
+}
+
+.gray-bg {
+  background-color: gainsboro;
 }
